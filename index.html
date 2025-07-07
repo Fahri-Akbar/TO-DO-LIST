@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Todo List</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.materialdesignicons.com/7.4.47/css/materialdesignicons.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-white min-h-screen overflow-hidden">
+
+  <!-- Wrapper -->
+  <div class="pt-10 px-4 max-h-screen overflow-auto">
+    <div class="max-w-xl mx-auto space-y-4">
+
+      <!-- Header & Counter -->
+      <div class="flex justify-between items-center">
+        <h1 class="text-2xl font-bold flex items-center gap-2">
+          <i class="mdi mdi-format-list-checkbox text-yellow-400 text-2xl"></i>
+          TODOLIST
+        </h1>
+        <span id="taskCounter" class="bg-yellow-400 text-gray-800 px-2 py-1 rounded text-sm font-semibold">0 / 0</span>
+      </div>
+
+      <!-- Input Task -->
+      <div class="flex gap-2">
+        <input
+          type="text"
+          id="todoInput"
+          placeholder="Add Your Task"
+          class="flex-1 px-4 py-2 rounded-full bg-gray-700 text-white focus:outline-none"
+        />
+        <button
+          id="addBtn"
+          class="bg-green-400 hover:bg-green-500 text-gray-900 font-semibold px-4 py-2 rounded-full"
+        >
+          Add Task
+        </button>
+      </div>
+
+      <!-- Task List -->
+      <ul id="todoList" class="space-y-2">
+        <!-- Task items akan ditambahkan lewat JS -->
+      </ul>
+
+    </div>
+  </div>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
